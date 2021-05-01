@@ -5,7 +5,7 @@ class MainGUI(Frame):
     # the constructor
     def __init__(self, parent):
         Frame.__init__(self, parent, bg="white")
-        parent.attributes("-fullscreen", True)
+        //parent.attributes("-fullscreen", True)
         self.setupGUI()
         
     # sets up the GUI
