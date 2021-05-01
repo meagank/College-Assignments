@@ -5,7 +5,7 @@ class MainGUI(Frame):
     # the constructor
     def __init__(self, parent):
         Frame.__init__(self, parent, bg="white")
-        //parent.attributes("-fullscreen", True)
+        # parent.attributes("-fullscreen", True)
         self.setupGUI()
         
     # sets up the GUI
@@ -51,7 +51,7 @@ class MainGUI(Frame):
         # first, fetch and store the image
         # to work best on the RPi, images should be 115x115 pixels
         # otherwise, may need to add .subsample(n)
-        img = PhotoImage(file="images/lpr.gif")
+        img = PhotoImage(file="lpr.gif")
         # next create the button (white background, no border,
         # no highlighting, no color when clicked)
         button = Button(self, bg="white", image=img, borderwidth=0, \
@@ -64,7 +64,7 @@ class MainGUI(Frame):
         # the same is done for the rest of the buttons
 
         # )
-        img = PhotoImage(file="images/rpr.gif")
+        img = PhotoImage(file="rpr.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process(")"))
@@ -72,7 +72,7 @@ class MainGUI(Frame):
         button.grid(row=1, column=1, sticky=N+S+E+W)
 
         # AC
-        img = PhotoImage(file="images/clr.gif")
+        img = PhotoImage(file="clr.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("AC"))
@@ -81,7 +81,7 @@ class MainGUI(Frame):
 
 
         # <-
-        img = PhotoImage(file="images/bak.gif")
+        img = PhotoImage(file="bak.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("<"))
@@ -92,7 +92,7 @@ class MainGUI(Frame):
 
         ###### THE SECOND ROW ######
         # 7
-        img = PhotoImage(file="images/7.gif")
+        img = PhotoImage(file="7.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("7"))
@@ -100,7 +100,7 @@ class MainGUI(Frame):
         button.grid(row=2, column=0, sticky=N+S+E+W)
 
         # 8
-        img = PhotoImage(file="images/8.gif")
+        img = PhotoImage(file="8.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("8"))
@@ -108,7 +108,7 @@ class MainGUI(Frame):
         button.grid(row=2, column=1, sticky=N+S+E+W)
 
         # 9
-        img = PhotoImage(file="images/9.gif")
+        img = PhotoImage(file="9.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("9"))
@@ -116,7 +116,7 @@ class MainGUI(Frame):
         button.grid(row=2, column=2, sticky=N+S+E+W)
 
         # /
-        img = PhotoImage(file="images/div.gif")
+        img = PhotoImage(file="div.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("/"))
@@ -127,7 +127,7 @@ class MainGUI(Frame):
 
         ###### THE THIRD ROW ######
         # 4
-        img = PhotoImage(file="images/4.gif")
+        img = PhotoImage(file="4.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("4"))
@@ -135,7 +135,7 @@ class MainGUI(Frame):
         button.grid(row=3, column=0, sticky=N+S+E+W)
 
         # 5
-        img = PhotoImage(file="images/5.gif")
+        img = PhotoImage(file="5.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("5"))
@@ -143,7 +143,7 @@ class MainGUI(Frame):
         button.grid(row=3, column=1, sticky=N+S+E+W)
 
         # 6
-        img = PhotoImage(file="images/6.gif")
+        img = PhotoImage(file="6.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("6"))
@@ -151,7 +151,7 @@ class MainGUI(Frame):
         button.grid(row=3, column=2, sticky=N+S+E+W)
 
         # *
-        img = PhotoImage(file="images/mul.gif")
+        img = PhotoImage(file="mul.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("*"))
@@ -162,7 +162,7 @@ class MainGUI(Frame):
 
         ###### THE FOURTH ROW ######
         # 1
-        img = PhotoImage(file="images/1.gif")
+        img = PhotoImage(file="1.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("1"))
@@ -170,7 +170,7 @@ class MainGUI(Frame):
         button.grid(row=4, column=0, sticky=N+S+E+W)
 
         # 2
-        img = PhotoImage(file="images/2.gif")
+        img = PhotoImage(file="2.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("2"))
@@ -178,7 +178,7 @@ class MainGUI(Frame):
         button.grid(row=4, column=1, sticky=N+S+E+W)
 
         # 3
-        img = PhotoImage(file="images/3.gif")
+        img = PhotoImage(file="3.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("3"))
@@ -186,7 +186,7 @@ class MainGUI(Frame):
         button.grid(row=4, column=2, sticky=N+S+E+W)
 
         # -
-        img = PhotoImage(file="images/sub.gif")
+        img = PhotoImage(file="sub.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("-"))
@@ -197,7 +197,7 @@ class MainGUI(Frame):
 
         ###### THE FIFTH ROW ######
         # 0
-        img = PhotoImage(file="images/0.gif")
+        img = PhotoImage(file="0.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("0"))
@@ -205,7 +205,7 @@ class MainGUI(Frame):
         button.grid(row=5, column=0, sticky=N+S+E+W)
 
         # .
-        img = PhotoImage(file="images/dot.gif")
+        img = PhotoImage(file="dot.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("."))
@@ -214,7 +214,7 @@ class MainGUI(Frame):
 
 
         # +
-        img = PhotoImage(file="images/add.gif")
+        img = PhotoImage(file="add.gif")
         button = Button(self, bg="white", image=img, borderwidth=0,\
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("+"))
@@ -224,7 +224,7 @@ class MainGUI(Frame):
 
         ###### THE SIXTH ROW ######
         # =
-        img = PhotoImage(file="images/eql-wide.gif")
+        img = PhotoImage(file="eql-wide.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("="))
@@ -233,7 +233,7 @@ class MainGUI(Frame):
 
 
         # **
-        img = PhotoImage(file="images/pow.gif")
+        img = PhotoImage(file="pow.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("**"))
@@ -242,7 +242,7 @@ class MainGUI(Frame):
 
 
         # %
-        img = PhotoImage(file="images/mod.gif")
+        img = PhotoImage(file="mod.gif")
         button = Button(self, bg="white", image=img, borderwidth=0, \
                         highlightthickness=0, activebackground="white", \
                         command=lambda: self.process("%"))
