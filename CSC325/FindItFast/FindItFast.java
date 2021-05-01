@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 
 
-public class Finditfast 
+public class FindItFast 
 {
 	public static void main(String[] args) throws Exception 
 	{ 
